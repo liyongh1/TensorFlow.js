@@ -15,3 +15,7 @@ async function getData() {
        .filter(car => (car.mpg != null && car.horsepower != null));
        return cleaned;
 }
+
+carsData.map(car => ({ mpg: car.Miles_per_Gallon, horsepower: car.Horsepower, }))
+
+carsData.map().filter(car => (car.mpg != null && car.horsepower != null));
